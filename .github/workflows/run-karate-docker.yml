@@ -18,7 +18,7 @@ jobs:
           --rm --name karate-tests --init \
           -v"$(pwd)":/usr/src/mymaven \
           -w /usr/src/mymaven \
-          maven:3.8.6 \
+          maven:3.9.3 \
           ./run-tests.sh
     - uses: actions/upload-artifact@v3
       with:
